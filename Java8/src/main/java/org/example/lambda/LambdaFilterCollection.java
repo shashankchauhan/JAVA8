@@ -19,6 +19,11 @@ public class LambdaFilterCollection {
         Stream<Product> filterData = list.stream().filter(p -> p.price > 20000);
 
         filterData.forEach(p -> System.out.println(p.name+""+p.price));
+
+        list.stream().filter((p) -> p.name.startsWith("Iphone")).map((p) -> p.name.toUpperCase())
+                .sorted().forEach(p -> System.out.println(""+p));
+
+
     }
 }
 
