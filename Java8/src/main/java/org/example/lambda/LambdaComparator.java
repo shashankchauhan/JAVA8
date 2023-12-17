@@ -22,20 +22,19 @@ public class LambdaComparator {
 
  class Employee{
 
+     public Employee(Integer id, String name) {
+         this.id = id;
+         this.name = name;
+     }
+
     private Integer id;
+    private String name;
 
      public String getName() {
          return name;
      }
 
      public void setName(String name) {
-         this.name = name;
-     }
-
-     private String name;
-
-     public Employee(Integer id, String name) {
-         this.id = id;
          this.name = name;
      }
 

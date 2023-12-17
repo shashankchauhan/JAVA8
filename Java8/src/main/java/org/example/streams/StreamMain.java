@@ -17,7 +17,9 @@ public class StreamMain {
         // Stream is interface
         Stream<Integer> slist =  list.stream();
         List <Integer> evenList  = slist.filter( i -> i%2==0).collect(Collectors.toList());
-
         System.out.println(evenList);
+        List <Integer> greaterList  = list.stream().filter( i -> i > 3).collect(Collectors.toList());
+        System.out.println(greaterList);
+
     }
 }

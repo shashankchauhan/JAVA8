@@ -21,7 +21,9 @@ public class LambdaFilterCollection {
         filterData.forEach(p -> System.out.println(p.name+""+p.price));
 
         list.stream().filter((p) -> p.name.startsWith("Iphone")).map((p) -> p.name.toUpperCase())
-                .sorted().forEach(p -> System.out.println(""+p));
+                .sorted().forEach(p -> System.out.println("Values "+p));
+
+        list.stream().map((p) -> p.getName().toLowerCase()).forEach(p -> System.out.println("map value "+p));
 
 
     }

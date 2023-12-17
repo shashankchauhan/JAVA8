@@ -21,6 +21,7 @@ public class LambdaCalculation {
 
 // A sample functional interface (An interface with
 // single abstract method
+@FunctionalInterface
 interface FuncInterface{
 
 
